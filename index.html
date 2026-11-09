@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIMALAYA</title>
+    <style>
+         body{
+            margin: 0%;
+            padding: 0%;
+         }
+
+        header {
+            border: 0px;
+            color: white;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 250px;
+            padding: 20px 20px 20px 20px;
+            background-image: url('Alpenglow Over Himalayan Peaks.png');
+            background-size: cover;
+            background-position: 10% 55%;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            overflow: hidden;
+        }
+        h1{
+            margin: 0;
+            font-size: 300%;
+            font-family: monospace, monospace;
+        }
+        header p {
+            margin: -10px 0 0;
+            max-width: 55%;
+            color: white;
+            font-family: monospace, monospace;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        nav {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            gap: 18px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-family: monospace, monospace;
+            font-size: 120%;
+        }
+        
+        main{
+            background-color:#071B49;
+            margin: 0;
+            padding: 30px 20px;
+        }
+        main h1{
+            color: white;
+            font-family: monospace, monospace;
+            margin: 0 0 20px;
+        }
+        .main-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .main-content.reverse {
+            flex-direction: row;
+        }
+        .main-content.reverse img {
+            order: -1;
+        }
+        .main-content p{
+            color: #F4F6FA;
+            font-family: monospace, monospace;
+            margin: 0;
+            flex: 1;
+            line-height: 1.7;
+        }
+        .main-content img {
+            width: 280px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 16px;
+            display: block;
+        }
+        .left-image {
+            margin-right: 0;
+        }
+        footer{
+            background-color: #000000;
+            color:rgb(252, 245, 245);
+            text-align: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        footer p {
+            font-family: monospace, monospace;
+            margin: 0;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        @media (max-width: 760px) {
+            header {
+                min-height: auto;
+                padding: 28px 24px;
+                border-top-left-radius: 28px;
+                border-top-right-radius: 28px;
+                gap: 6px;
+            }
+
+            h1 {
+                font-size: clamp(2rem, 8vw, 3rem);
+            }
+
+            header p {
+                max-width: 100%;
+                margin: 0;
+            }
+
+            nav {
+                position: static;
+                flex-wrap: wrap;
+                gap: 12px 20px;
+                margin-top: 18px;
+            }
+
+            nav a {
+                font-size: clamp(1rem, 3vw, 1.2rem);
+            }
+
+            main {
+                padding: 28px 24px;
+            }
+
+            main h1 {
+                font-size: clamp(1.5rem, 5vw, 2rem);
+                line-height: 1.3;
+            }
+
+            .main-content {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .main-content.reverse {
+                flex-direction: column;
+            }
+
+            .main-content.reverse img {
+                order: 0;
+            }
+
+            .main-content img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 14 / 9;
+                object-fit: cover;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 24px 18px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+
+            header p,
+            .main-content p {
+                font-size: 0.95rem;
+            }
+
+            nav {
+                gap: 10px 16px;
+            }
+
+            main {
+                padding: 24px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <h1>HIMALAYA</h1>
+         <p>the crown of the Earth, a true masterpiece of Nature.</p>
+         <nav>
+            <a href="#index" style="color: #F28C45; text-decoration: underline;">HOME</a>
+            <a href="places.html">PLACES</a>
+            <a href="contact.html">CONTACT</a>
+         </nav>
+    </header>
+    <main>
+        <h1>about</h1>
+        <div class="main-content">
+            <p>
+                <strong>Introduction and Geographical Location</strong><br> 
+                The Himalayas, also known as the Himalayan mountain range, are located in Asia and separate the plains of the Indian subcontinent from the Tibetan Plateau. They contain some of the highest mountains on Earth, including Mount Everest, the world's highest peak. The range has more than 100 peaks rising above 7,200 metres (23,600 feet).<br> 
+                The Himalayas extend across five countries: Nepal, India, China, Bhutan, and Pakistan. The sovereignty of the range in the Kashmir region is disputed among India, Pakistan, and China. The mountain range is bordered by the Karakoram and Hindu Kush ranges in the northwest, the Tibetan Plateau in the north, and the Indo-Gangetic Plain in the south.
+            </p>
+            <img src="images (1).jpg" alt="Himalayan mountains">
+        </div>
+
+        <div class="main-content reverse">
+            <img src="images (2).jpg" alt="Himalayan rivers and culture">
+            <p>
+                <strong>Rivers, Culture and Importance</strong><br> 
+                The Himalayas are the source of several major rivers, including the Indus, Ganges, and Tsangpo-Brahmaputra. Their combined drainage basin supports approximately 600 million people, while around 53 million people live in the Himalayan region.<br> 
+                The Himalayas have greatly influenced the cultures and traditions of South Asia and Tibet. Many Himalayan peaks are considered sacred in Hinduism and Buddhism. Some mountains, such as Gangkhar Puensum, Machapuchare, Nanda Devi, and Mount Kailash, have restrictions on climbing due to religious, cultural, or environmental reasons.
+            </p>
+        </div>
+
+        <div class="main-content">
+            <p>
+                <strong>Formation and Physical Structure</strong><br>
+                The Himalayas were formed millions of years ago when the Indian tectonic plate collided with the Eurasian plate. This collision caused the Earth's crust to fold and rise, creating the enormous mountain range. The movement of tectonic plates also contributed to the formation of the Tibetan Plateau.<br>
+                The Himalayan mountain range stretches approximately 2,400 kilometres (1,500 miles) from west-northwest to east-southeast in a curved shape. Its western end is marked by Nanga Parbat, while its eastern end reaches Namcha Barwa. The range varies in width from approximately 350 kilometres in the west to 151 kilometres in the east.
+            </p>
+            <img src="premium_photo-1688645554172-d3aef5f837ce.avif" alt="Himalayan geology and structure">
+        </div>
+    </main>
+    <footer>
+        <p>@himalaya</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT | HIMALAYA</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 250px;
+            padding: 20px;
+            overflow: hidden;
+            color: white;
+            background-image: url('Alpenglow Over Himalayan Peaks.png');
+            background-size: cover;
+            background-position: 10% 55%;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: monospace, monospace;
+            font-size: 300%;
+        }
+
+        header p {
+            max-width: 55%;
+            margin: -10px 0 0;
+            color: white;
+            font-family: monospace, monospace;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        nav {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            gap: 18px;
+        }
+
+        nav a {
+            color: white;
+            font-family: monospace, monospace;
+            font-size: 120%;
+            text-decoration: none;
+        }
+
+        main {
+            min-height: 280px;
+            margin: 0;
+            padding: 30px 20px;
+            color: #F4F6FA;
+            background-color: #071B49;
+            font-family: monospace, monospace;
+        }
+
+        main h2 {
+            margin: 0 0 16px;
+            color: white;
+        }
+
+        main p {
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1.6fr) minmax(200px, 0.9fr);
+            align-items: center;
+            gap: 24px;
+            margin-top: 24px;
+            max-width: 1100px;
+        }
+
+        .contact-form {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+            width: 100%;
+            max-width: 720px;
+            margin: 0;
+        }
+
+        .side-photo {
+            display: block;
+            width: 100%;
+            max-width: 360px;
+            height: auto;
+            border-radius: 16px;
+            object-fit: cover;
+            justify-self: end;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+        }
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-field.full-width,
+        .form-status {
+            grid-column: 1 / -1;
+        }
+
+        .form-field label {
+            color: white;
+            font-weight: bold;
+        }
+
+        .form-field input,
+        .form-field textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #9aaccb;
+            border-radius: 6px;
+            color: #071B49;
+            background: white;
+            font: inherit;
+        }
+
+        .form-field textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            justify-self: start;
+            padding: 12px 20px;
+            border: 0;
+            border-radius: 6px;
+            color: #071B49;
+            background-color: #F28C45;
+            font: inherit;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #ffad70;
+        }
+
+        .contact-form button:focus-visible,
+        .form-field input:focus-visible,
+        .form-field textarea:focus-visible {
+            outline: 3px solid #F28C45;
+            outline-offset: 2px;
+        }
+
+        .form-status {
+            min-height: 1.7em;
+        }
+
+        footer {
+            margin: 0;
+            padding: 20px;
+            color: rgb(252, 245, 245);
+            background-color: #000000;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-family: monospace, monospace;
+        }
+
+        @media (max-width: 760px) {
+            header {
+                min-height: auto;
+                gap: 6px;
+                padding: 28px 24px;
+                border-top-left-radius: 28px;
+                border-top-right-radius: 28px;
+            }
+
+            header h1 {
+                font-size: clamp(2rem, 8vw, 3rem);
+            }
+
+            header p {
+                max-width: 100%;
+                margin: 0;
+            }
+
+            nav {
+                position: static;
+                flex-wrap: wrap;
+                gap: 12px 20px;
+                margin-top: 18px;
+            }
+
+            nav a {
+                font-size: clamp(1rem, 3vw, 1.2rem);
+            }
+
+            main {
+                padding: 28px 24px;
+            }
+
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .side-photo {
+                justify-self: auto;
+                max-width: 2000%;
+                
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 24px 18px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+
+            main {
+                padding: 24px 18px;
+            }
+
+            .contact-form {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HIMALAYA</h1>
+        <p>the crown of the Earth, a true masterpiece of Nature.</p>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="places.html">PLACES</a>
+            <a href="contact.html" aria-current="page" style="color: #F28C45; text-decoration: underline;">CONTACT</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact</h2>
+        <p>Have a question or feedback about the Himalayas? We would love to hear from you.</p>
+        <div class="contact-layout">
+            <form class="contact-form" id="contact-form">
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" maxlength="100" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+                </div>
+                 
+                <div class="form-field full-width">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" maxlength="2000" required></textarea>
+                </div>
+                <button type="submit">Send message</button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+            <img class="side-photo" src="images (3).jpg" alt="himalaya">
+        </div>
+    </main>
+    <footer>
+        <p>@himalaya</p>
+    </footer>
+    <script>
+        const contactForm = document.querySelector("#contact-form");
+        const formStatus = document.querySelector("#form-status");
+
+        contactForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const name = contactForm.elements.name;
+            const message = contactForm.elements.message;
+            name.setCustomValidity(name.value.trim() ? "" : "Please enter your name.");
+            message.setCustomValidity(message.value.trim() ? "" : "Please enter a message.");
+
+            if (!contactForm.reportValidity()) {
+                formStatus.textContent = "";
+                return;
+            }
+
+            formStatus.textContent = "Thanks for your message.";
+            contactForm.reset();
+        });
+
+        contactForm.addEventListener("input", (event) => {
+            if (event.target.name === "name" || event.target.name === "message") {
+                event.target.setCustomValidity("");
+            }
+            formStatus.textContent = "";
+        });
+    </script>
+</body>
+</html>
